@@ -7,12 +7,12 @@
 </head>
 
 <body>
-<div ng-app="myInsights" ng-controller="myCtrl">
+<div ng-app="myApp" ng-controller="myCtrl">
   <h3>{{welcomeMsg}}</h3>
 </div>
 
   <script>
-var app = angular.module('myInsights', []);
+var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $location) {
     $http.get("welcome.html").then(function (response) {
         $scope.welcomeMsg = response.data;
