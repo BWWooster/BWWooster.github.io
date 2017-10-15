@@ -16,7 +16,8 @@
 var app = angular.module('myInsights', []);
 app.controller('myCtrl', function($scope, $location) {
     $http.get("welcome.html").then(function (response) {
-        $scope.myWelcome = response.data;
+        $scope.welcomeMsg
+          = response.data;
     });
  });
 </script>
