@@ -4,14 +4,12 @@
 <body>
 
 <div ng-app="myApp" ng-controller="myCtrl"> 
-
-<p>Today's welcome message is:</p>
-
-<h1>{{myWelcome}}</h1>
-
+  <p>Today's welcome message is:</p>
+  <h1>{{myWelcome}}</h1>
+  
+  <p>Name: <input type="text" ng-model="name"></p>
+  <p ng-bind="name"></p>
 </div>
-
-<p>The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.</p>
 
 <script>
 var app = angular.module('myApp', []);
